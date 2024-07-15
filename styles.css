@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+#home .content {
+    max-width: 100%;
+    text-align: center;
+}
+
+#home .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.contact-form .input-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form .checkbox-group label {
+    margin-left: 10px;
+}
+
+#services {
+    background-color: #f8f9fa;
+}
+
+#services .carousel-item {
+    padding: 30px 0;
+}
+
+.service-description,
+.growth-card {
+    transition: transform 0.3s ease;
+}
+
+.service-description:hover,
+.growth-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-description {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#projects {
+    background-color: #ffffff;
+}
+
+#projects .list-group-item {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#projects .list-group-item.active {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+}
+
+#projects .list-group-item:hover {
+    background-color: #e2e2e2;
+    transform: scale(1.05);
+}
+
+.growth-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.growth-card:hover {
+    background-color: #e2e2e2;
+}
+
+.growth-card i {
+    font-size: 40px;
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+.growth-card span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+    }
+    .content {
+        max-width: 100%;
+    }
+}
